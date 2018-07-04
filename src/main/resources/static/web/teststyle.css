@@ -1,0 +1,16 @@
+td {
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+}
+
+#movable-box {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}

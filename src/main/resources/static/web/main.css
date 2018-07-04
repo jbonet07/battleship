@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arvo';
+    color: white;
+    font-size: 2em;
+    background-image: url(assets/ship-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#main-page {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+#title {
+    font-family: 'Black Ops One';
+    font-size: 100px;
+    text-align: center;
+}
+
+#current-player {
+    font-family: 'Black Ops One';
+    font-weight: 600;
+    text-align: center;
+}
+
+#notlogged-buttons,
+.logged-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#create-game {
+    justify-content: flex-start
+}
+
+.main-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
+
+.list-and-button {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.modal-title {
+    color: black;
+}
+
+.table {
+    margin-top: 50px;
+    width: 30%;
+    text-align: center;
+}
+
+thead > tr > th,
+#scoretable > tr > td {
+    text-align: center;
+}
+
+#scoretable > tr:first-child {
+    background-color: rgba(255, 255, 0, 0.4);
+}
+
+#scoretable > tr:nth-child(2) {
+    background-color: rgba(160, 160, 160, 0.4);
+}
+
+#scoretable > tr:nth-child(3) {
+    background-color: rgba(255, 153, 0, 0.4);
+}
+
+#games-list {
+
+    font-weight: 600;
+
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    height: 75px;
+}
+
+
+
+.game-players {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.game-date,
+.player1,
+.player2,
+.vs,
+.waiting-player {
+    text-align: center;
+    vertical-align: center;
+    line-height: 75px;
+}
+
+.winner {
+    color: deepskyblue;
+}
+
+.looser {
+    color: gray;
+}
+
+.tie {
+    color: lightblue;
+}
+
+.waiting-player {
+    opacity: 0;
+    animation: opacityOn 3s infinite;
+}
+
+@keyframes opacityOn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.game-btn {
+    width: 100px;
+}

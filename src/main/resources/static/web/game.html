@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="game.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main-page">
+        <div class="my-buttons">
+            <button type="submit" value="Back" class="btn btn-primary" onclick="window.location='/web/games.html';"><i class="fas fa-arrow-left"></i></button>
+            <form id="logout-form" onsubmit="return false">
+                <button type="submit" value="Log out" class="btn btn-primary" id="logout"><i class="fas fa-sign-out-alt"></i></button>
+            </form>
+        </div>
+        <h1 id="title">SINK 'EM</h1>
+
+        <h2 id="players"></h2>
+        <div class="grids">
+
+            <table id="ships-locations">
+            </table>
+
+            <table id="salvoes-locations">
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

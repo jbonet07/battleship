@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arvo';
+    color: white;
+    font-size: 2em;
+    background-image: url(assets/game-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#main-page {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+#title {
+    font-family: 'Black Ops One';
+    font-size: 100px;
+    text-align: center;
+}
+
+#players {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    margin-bottom: 50px;
+}
+
+
+.cell {
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+.cell[status="empty"] {
+    background-image: url(assets/water1.gif);
+
+
+}
+
+.cell[status="axis"] {
+    font-weight: 600;
+}
+
+.my-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.grids {
+    display: flex;
+    justify-content: space-between;
+}
